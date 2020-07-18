@@ -13,6 +13,6 @@ public interface CategoryService {
 
     ServerResponse<List<Category>> getChildrenCategory(Integer categoryId);
 
-    ServerResponse getDeepChildrenCategory(Integer categoryId);
+    ServerResponse<List<Integer>> getDeepChildrenCategory(Integer categoryId);
 
 }
