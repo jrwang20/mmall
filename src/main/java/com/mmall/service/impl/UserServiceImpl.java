@@ -204,7 +204,13 @@ public class UserServiceImpl implements UserService {
         //2. 设置准备返回的用户信息对象的密码为空，进行封装并返回
         user.setPassword(StringUtils.EMPTY);
         return ServerResponse.createBySuccessData(user);
+    }
 
+    public ServerResponse checkAdminRole(User user) {
+        if(user != null && user.getRole() == Const.Role.ROLE_ADMIN) {
+            return ServerResponse.createBySuccess();
+        }
+        return ServerResponse.createByError();
     }
 
 
