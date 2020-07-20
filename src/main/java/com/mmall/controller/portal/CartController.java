@@ -129,7 +129,7 @@ public class CartController {
     /**
      * 查询当前购物车内全部种类商品的全部数量
      */
-    @RequestMapping(value = "get_cart_product_count.do", method = RequestMethod.POST)
+    @RequestMapping(value = "get_cart_product_count.do", method = RequestMethod.GET)
     @ResponseBody
     public ServerResponse<Integer> getCartProductCount(HttpSession session) {
         User user = (User) session.getAttribute(Const.CURRENT_USER);

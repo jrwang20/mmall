@@ -13,7 +13,6 @@ import com.mmall.pojo.Product;
 import com.mmall.service.CategoryService;
 import com.mmall.service.ProductService;
 import com.mmall.util.DateTimeUtil;
-import com.mmall.util.PropertiesUtil;
 import com.mmall.vo.ProductDetailVo;
 import com.mmall.vo.ProductListVo;
 import org.apache.commons.lang.StringUtils;
