@@ -169,6 +169,9 @@ public class ProductManagerController {
         }
     }
 
+    /**
+     * 上传富文本文件
+     */
     @RequestMapping(value = "richtext_img_upload.do", method = RequestMethod.POST)
     @ResponseBody
     public Map richtextImgUpload(HttpSession session, @RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request, HttpServletResponse response){
